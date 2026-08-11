@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ch-yu02
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ch-yu02/AutoAnimeManager
+  - ch-yu02/My-ISEE-Course-Reference
+  - ch-yu02/ch-yu02.github.io
+  - ch-yu02/EDU-Mate
