@@ -1,0 +1,101 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> STM32 Closed-Loop Temperature Controller | Zehao Shen </title> <meta name="author" content="Zehao Shen"> <meta name="description" content="Custom heater-control board with dual temperature sensing, PWM power control, and gain-scheduled PID."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=e272beb2a356f3d9abedbe97e457f5c2"> <link rel="canonical" href="https://ch-yu02.github.io/projects/stm32-temperature-control/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Zehao</span> Shen </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">STM32 Closed-Loop Temperature Controller</h1> <p class="post-description">Custom heater-control board with dual temperature sensing, PWM power control, and gain-scheduled PID.</p> </header> <article> <p><strong>June 2025 · Two-person course project · Electronic Circuit Systems Laboratory, Zhejiang University</strong></p> <p>A closed-loop temperature-control system for an aluminum plate heated by a high-power resistor. An <strong>STM32F103C8T6</strong> reads a contact NTC thermistor and a GY906 infrared sensor, drives a 12 V heater through PWM, and provides local and Bluetooth control.</p> <p><strong>My role:</strong> system schematic design, PCB soldering and electrical bring-up, PID implementation and tuning, hardware–software integration, and project documentation.</p> <p><strong>Source code:</strong> <a href="https://github.com/ch-yu02/My-ISEE-Course-Reference/tree/main/%E7%9F%AD%E5%AD%A6%E6%9C%9F-%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E7%B3%BB%E7%BB%9F%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C/%E6%9C%80%E7%BB%88%E7%89%88/20250627" rel="external nofollow noopener" target="_blank">STM32 firmware and CubeMX project</a></p> <div style="width: 50%; margin-inline: auto;"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/temperature-control/system-working-480.webp 480w,/assets/img/projects/temperature-control/system-working-800.webp 800w,/assets/img/projects/temperature-control/system-working-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/temperature-control/system-working.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Working temperature-control system" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="caption"> Final setup during a heating test. The OLED shows the target temperature, both sensor readings, and controller state. </div> <h2 id="system-architecture">System architecture</h2> <div style="width: 50%; margin-inline: auto;"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/temperature-control/system-overview-480.webp 480w,/assets/img/projects/temperature-control/system-overview-800.webp 800w,/assets/img/projects/temperature-control/system-overview-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/temperature-control/system-overview.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Closed-loop temperature-control system overview" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="caption"> Closed-loop signal and power flow from dual temperature sensing through PID control and PWM actuation, with local display, Bluetooth control, and over-temperature alarm interfaces. </div> <p>The system is organized around four functional paths:</p> <ul> <li> <strong>Sensing:</strong> a 10 kΩ NTC thermistor is sampled through the STM32 ADC, while a GY906 infrared sensor provides a second temperature reading over I²C.</li> <li> <strong>Control:</strong> the STM32 computes the heater command from the measured temperature and target setpoint.</li> <li> <strong>Actuation:</strong> a MOSFET power stage switches the 12 V resistive heater using PWM.</li> <li> <strong>Interface and safety:</strong> an OLED and four buttons provide local control, a UART Bluetooth module supports remote commands, and a buzzer provides an over-temperature alarm.</li> </ul> <div style="width: 50%; margin-inline: auto;"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/temperature-control/circuit-diagram-480.webp 480w,/assets/img/projects/temperature-control/circuit-diagram-800.webp 800w,/assets/img/projects/temperature-control/circuit-diagram-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/temperature-control/circuit-diagram.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Temperature-control system schematic" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="caption"> System schematic covering power conversion, temperature sensing, heater drive, user input, display, alarm, and Bluetooth interfaces. </div> <h2 id="hardware-implementation">Hardware implementation</h2> <p>I designed the system-level schematic and then soldered and brought up the assembled board, checking connectivity, supply rails, sensor interfaces, and PWM output. The PCB layout itself was completed by my teammate.</p> <div style="width: 50%; margin-inline: auto;"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/temperature-control/pcb-design-3d-480.webp 480w,/assets/img/projects/temperature-control/pcb-design-3d-800.webp 800w,/assets/img/projects/temperature-control/pcb-design-3d-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/temperature-control/pcb-design-3d.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="PCB design preview" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="caption"> Three-dimensional preview of the controller PCB before assembly. </div> <div style="width: 50%; margin-inline: auto;"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/temperature-control/hardware_connections-480.webp 480w,/assets/img/projects/temperature-control/hardware_connections-800.webp 800w,/assets/img/projects/temperature-control/hardware_connections-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/temperature-control/hardware_connections.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Assembled controller hardware" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div class="caption"> Assembled controller board. </div> <h2 id="control-implementation">Control implementation</h2> <p>I implemented a gain-scheduled PID controller for the heater loop. The controller changes its gains with the magnitude of the temperature error, enables integration only within a limited error window, smooths the derivative term with a moving average, and clamps the final command to the valid PWM range.</p> <p>During tuning, I also compared PID with staged-heating and hysteresis-based control. Hardware tests exposed temperature-sampling jitter and response delay, which led to revisions in the filtering and control timing.</p> <h2 id="results">Results</h2> <p>Bench measurements showed a regulated 5 V rail of approximately <strong>5.04 V</strong>, peak heater power of approximately <strong>13 W</strong>, and idle system power of approximately <strong>0.7 W</strong>. System tests covered temperature acquisition, PWM heater control, button input, OLED updates, over-temperature alarms, and Bluetooth commands.</p> <p>One hardware issue remained in the final prototype: the buzzer series resistance was too large, which reduced the alarm volume.</p> <p><em>This was a two-person project. My teammate designed the PCB layout and implemented the sensor, OLED, button, alarm, and Bluetooth functions; the work described as my role above is my individual contribution.</em></p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Zehao Shen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "projects",
+          description: "Some projects of my work and study.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "My GitHub profile and public repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "projects-autoanimanager",
+          title: 'AutoAniManager',
+          description: "A local-first anime manager that connects Bangumi metadata, media discovery, downloads, playback, and watch progress in one desktop workflow.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/autoanime-manager/";
+            },},{id: "projects-edu-mate",
+          title: 'EDU-Mate',
+          description: "A multimodal classroom learning agent running on an Intel embedded platform.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/edu-mate/";
+            },},{id: "projects-five-stage-pipelined-risc-v-cpu",
+          title: 'Five-Stage Pipelined RISC-V CPU',
+          description: "A Verilog implementation of a 32-bit five-stage RISC-V processor with forwarding, hazard detection, branch flushing, and subword memory operations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/riscv-cpu/";
+            },},{id: "projects-stm32-closed-loop-temperature-controller",
+          title: 'STM32 Closed-Loop Temperature Controller',
+          description: "Custom heater-control board with dual temperature sensing, PWM power control, and gain-scheduled PID.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/stm32-temperature-control/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/cv-2026.8.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%7A%65%68%61%6F_%73@%7A%6A%75.%65%64%75.%63%6E", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
