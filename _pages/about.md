@@ -7,7 +7,7 @@ subtitle: >
 
 profile:
   align: right
-  image: my_profile.png
+  image: profile/my_profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="https://www.zju.edu.cn/english/" target="_blank">Zhejiang University</a></p>
@@ -26,13 +26,17 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-<div style="font-size: 1.125rem; line-height: 1.75;" markdown="1">
 
-I am an undergraduate in Information Engineering at Zhejiang University. My current research studies how LLM agents solve scientific and engineering problems. I compare agent workflows involving tool use, search, reflection, and automated optimization on mathematical and wireless-communication benchmarks, and construct domain-specific reasoning datasets.
+I am an undergraduate studying **Information Engineering** at the <a href="http://www.isee.zju.edu.cn/iseenglish/" target="_blank">College of Information Science and Electronic Engineering</a>, Zhejiang University, and expect to graduate in 2027.
 
-I have also designed FPGA- and microcontroller-based systems and implemented signal-processing and communication pipelines. These experiences shape my goal of building reliable intelligent systems that can reason with external tools and operate under real engineering constraints.
+My current research focuses on **LLM agents for scientific and engineering problems**. At NTU, I am reproducing and analyzing WirelessAgent++ and studying how mechanisms such as tool use, feedback, search, and workflow optimization affect LLM-agent performance. At ZJU, I contributed to the construction of reasoning data for **TelecomGPT-R1**, including data processing and multi-stage verification for telecommunications problems.
 
-</div>
+I also enjoy building systems that interact with the physical world. My projects include a **five-stage RISC-V CPU implemented on FPGA**, an **STM32-based temperature control system**, and a **multimodal learning assistant** developed for the Intel Cup Embedded System Design Contest. These experiences have drawn me toward wireless communications, embedded systems, and AI hardware, where algorithms and intelligent models ultimately become part of real, functioning devices.
+
+<p>
+  I am applying to PhD programs for Fall 2027 and welcome conversations
+  about research in AI systems for scientific and engineering applications.
+</p>
 
 <!--Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

@@ -80,4 +80,4 @@ Bench measurements showed a regulated 5 V rail of approximately **5.04 V**, peak
 
 One hardware issue remained in the final prototype: the buzzer series resistance was too large, which reduced the alarm volume.
 
-*This was a two-person project. My teammate designed the PCB layout and implemented the sensor, OLED, button, alarm, and Bluetooth functions; the work described as my role above is my individual contribution.*
+_This was a two-person project. My teammate designed the PCB layout and implemented the sensor, OLED, button, alarm, and Bluetooth functions; the work described as my role above is my individual contribution._
