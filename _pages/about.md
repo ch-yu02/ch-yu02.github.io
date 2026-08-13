@@ -29,14 +29,13 @@ latest_posts:
 
 I am an undergraduate studying **Information Engineering** at the <a href="http://www.isee.zju.edu.cn/iseenglish/" target="_blank">College of Information Science and Electronic Engineering</a>, Zhejiang University, and expect to graduate in 2027.
 
-My current research focuses on **LLM agents for scientific and engineering problems**. At NTU, I am reproducing and analyzing WirelessAgent++ and studying how mechanisms such as tool use, feedback, search, and workflow optimization affect LLM-agent performance. At ZJU, I contributed to the construction of reasoning data for **TelecomGPT-R1**, including data processing and multi-stage verification for telecommunications problems.
+My current research focuses on **LLM agents for scientific and engineering problem solving**. At NTU, I am reproducing and analyzing **WirelessAgent++** while developing **a taxonomy and design space for LLM reasoning architectures**, with an emphasis on how tools, feedback, search, and workflow design affect performance. At ZJU, I contributed to the construction and verification of reasoning data for **TelecomGPT-R1**.
 
-I also enjoy building systems that interact with the physical world. My projects include a **five-stage RISC-V CPU implemented on FPGA**, an **STM32-based temperature control system**, and a **multimodal learning assistant** developed for the Intel Cup Embedded System Design Contest. These experiences have drawn me toward wireless communications, embedded systems, and AI hardware, where algorithms and intelligent models ultimately become part of real, functioning devices.
+I also enjoy building systems that interact with the physical world. My projects include a **five-stage RISC-V CPU implemented on FPGA**, an **STM32-based temperature controller**, and a **multimodal learning assistant** developed for the Intel Cup Embedded System Design Contest. These experiences have shaped my broader interests in **wireless communications**, **embedded systems**, and **AI hardware**, where algorithms and intelligent models ultimately become part of real, functioning devices.
 
-<p>
-  I am applying to PhD programs for Fall 2027 and welcome conversations
-  about research in AI systems for scientific and engineering applications.
-</p>
+<hr>
+
+<p> <strong>PhD Applications.</strong> I am applying to PhD programs for Fall 2027 and would be glad to connect with researchers working on AI systems for scientific and engineering applications. </p>
 
 <!--Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
