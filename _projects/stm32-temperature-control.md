@@ -5,15 +5,6 @@ description: Custom heater-control board with dual temperature sensing, PWM powe
 img: assets/img/projects/temperature-control/system-overview.png
 importance: 2
 category: work
-_styles: |
-  article {
-    font-size: 1.1rem;
-    line-height: 1.75;
-  }
-
-  article blockquote {
-    font-size: inherit;
-  }
 ---
 
 **June 2025 · Two-person course project · Electronic Circuit Systems Laboratory, Zhejiang University**

@@ -5,15 +5,6 @@ description: A multimodal classroom learning agent running on an Intel embedded 
 img: assets/img/projects/edu-mate/system-overview.png
 importance: 0
 category: work
-_styles: |
-  article {
-    font-size: 1.1rem;
-    line-height: 1.75;
-  }
-
-  article blockquote {
-    font-size: inherit;
-  }
 ---
 
 **2026 · Team project for the Intel Cup Undergraduate Electronic Design Contest – Embedded System Design Invitational Contest**  
@@ -24,14 +15,6 @@ _styles: |
 EDU-Mate is a multimodal classroom learning assistant built for an Intel embedded platform. It brings live speech transcription, classroom images, structured notes, knowledge graphs, and an LLM-based classroom agent into a single workflow. During class, it captures and organizes lecture content; afterward, the same session becomes a searchable workspace for summaries, quizzes, review, and source-grounded question answering.
 
 The public repository contains an earlier development snapshot. The final competition prototype was completed and integrated beyond the version currently uploaded.
-
-<div style="width: 50%; max-width: 274px; margin-inline: auto;">
-  {% include figure.liquid loading="eager" path="assets/img/projects/edu-mate/system-overview.png" title="EDU-Mate classroom use case" class="img-fluid rounded z-depth-1" %}
-</div>
-
-<div class="caption">
-  Classroom workflow.
-</div>
 
 ## System architecture
 

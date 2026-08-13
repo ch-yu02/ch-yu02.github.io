@@ -5,18 +5,9 @@ description: A Verilog implementation of a 32-bit five-stage RISC-V processor wi
 img: assets/img/projects/riscv-cpu/riscv-cpu-architecture.png
 importance: 1
 category: work
-_styles: |
-  article {
-    font-size: 1.1rem;
-    line-height: 1.75;
-  }
-
-  article blockquote {
-    font-size: inherit;
-  }
 ---
 
-**August 2026 · Computer Organization and Design, Zhejiang University · Verilog · ModelSim · Vivado · Nexys Video**
+**December 2025 · Computer Organization and Design, Zhejiang University · Verilog · ModelSim · Vivado · Nexys Video**
 
 I implemented and integrated a 32-bit, five-stage pipelined RISC-V processor in Verilog. The design executes the course-required RV32I subset through the standard **IF–ID–EX–MEM–WB** pipeline and handles the main hazards introduced by pipelining: data forwarding, load-use stalls, and control-flow flushing. I also extended the memory datapath to support byte and halfword load/store operations.
 
@@ -29,8 +20,6 @@ I implemented and integrated a 32-bit, five-stage pipelined RISC-V processor in 
 <div class="caption">
   Five-stage datapath and control paths.
 </div>
-
-> **Pipeline:** IF → ID → EX → MEM → WB
 
 ## Processor architecture
 

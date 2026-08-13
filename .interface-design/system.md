@@ -45,6 +45,7 @@ Use `signal` as the single primary accent. Use `copper` only where a second sema
 ## Typography
 
 - Primary family: `"EB Garamond", Georgia, serif`
+- Italic emphasis and captions: `Georgia, "Times New Roman", serif` — preserve italic semantics without using EB Garamond's less legible italic cut
 - Code, commands, and identifiers: the existing monospace stack
 - Icons: their owning icon fonts
 - Body: `18px / 1.65`, weight `400`
@@ -54,7 +55,7 @@ Use `signal` as the single primary accent. Use `copper` only where a second sema
 - Section heading: `30px / 1.15`, weight `500`
 - Subheading: `22px / 1.25`, weight `500`
 - Strong emphasis: weight `700`
-- Captions: `15px / 1.4`, italic
+- Captions: `15px / 1.4`, Georgia italic
 
 On screens below `640px`, use a `40px` display name, `34px` page title, and `17px` body. Avoid all-caps body text; short technical labels may use small caps or modest letter spacing.
 
@@ -62,13 +63,14 @@ On screens below `640px`, use a `40px` display name, `34px` page title, and `17p
 
 - Base spacing unit: `8px`
 - Main content width: `1040px` maximum
-- Reading column: `38–42rem`
+- General reading column: `38–42rem`
+- Project article reading column: `48rem` on desktop; fluid full width on smaller screens
 - Article figure width: up to `900px` when the diagram benefits from it
 - Section spacing: `80px` desktop, `48px` mobile
 - Component spacing: `24px` or `32px`
 - Inline spacing: `8px` or `12px`
 
-The homepage may keep its text-and-portrait split, but the text must remain the focal point. Project details use a narrow reading column with selected system figures extending beyond it.
+The homepage may keep its text-and-portrait split, but the text must remain the focal point. Project details use a moderately wide technical reading column with selected system figures extending beyond it.
 
 ## Depth Strategy
 
@@ -99,7 +101,7 @@ The motif must remain structural and quiet. Do not turn it into a circuit-board 
 
 ### Homepage introduction
 
-Desktop uses an approximately `7:5` text-to-portrait split · `32px` gutter · portrait radius `4px` · introduction measure no wider than `42rem` · contact links remain compact and secondary.
+Desktop uses an approximately `2:1` text-to-portrait split · `32px` gutter · portrait width capped at `320px` · portrait radius `4px` · introduction measure no wider than `42rem` · portrait metadata is `16px/1.5` with a trace divider · contact links remain compact and secondary.
 
 ### Project index entry
 
@@ -107,7 +109,7 @@ Editorial row rather than a floating card · `24px` vertical padding · `1px` bo
 
 ### Project article
 
-Reading column `42rem` · body `18px/1.7` · section gap `56px` · figures may expand to `900px` · captions `15px` italic · blockquote text remains the same size as body text · code remains monospace.
+Reading column `48rem` on desktop and fluid on smaller screens · body `18px/1.7` · section gap `56px` · figures may expand to `900px` · captions `15px` Georgia italic · blockquote text remains the same size as body text · code remains monospace.
 
 ### Repository presentation
 

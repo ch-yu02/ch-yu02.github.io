@@ -5,15 +5,6 @@ description: A local-first anime manager that unifies Bangumi metadata, media di
 img: assets/img/projects/autoanime/architecture.png
 importance: 1
 category: fun
-_styles: |
-  article {
-    font-size: 1.1rem;
-    line-height: 1.75;
-  }
-
-  article blockquote {
-    font-size: inherit;
-  }
 ---
 
 **2026 · Personal project · Qt Quick/QML · C++ · libmpv · FastAPI · SQLite · Bangumi API · qBittorrent**
